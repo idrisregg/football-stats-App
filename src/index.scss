@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(105, 97, 97);
+  margin: 0;
+}
+
+header {
+  margin-top: 0;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(219, 205, 186);
+  mix-blend-mode: darken;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+main {
+  margin: 0;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    margin: 30px 0;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(125, 220, 188);
+  }
+}
+
+.leagues {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 10px 20px 10px;
+  gap: 10px;
+
+  @media (min-width: 850px) and (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 849px) {
+    grid-template-columns: 1fr;
+  }
+}
