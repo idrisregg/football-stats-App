@@ -1,12 +1,55 @@
-# React + Vite
+![cap1](https://raw.githubusercontent.com/idrisregg/football-stats-App/7d27860cf1bbf863947d94c90b20b841d63a9f4d/cap1.JPG)![cap2](https://raw.githubusercontent.com/idrisregg/football-stats-App/7d27860cf1bbf863947d94c90b20b841d63a9f4d/cap2.JPG)![cap3](https://github.com/idrisregg/football-stats-App/blob/main/public/404.jpg?raw=true)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>⚽ Football Stats App</h2>
 
-Currently, two official plugins are available:
+A simple React app that fetches live football standings using the API-Football API.
+The app focuses on the 6 major European leagues and allows users to explore league standings interactively.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h1>🚀 Features</h1>
 
-## Expanding the ESLint configuration
+<h2>🏆 Home Page Highlights:</h2>
+Displays the top 7 teams from each of the 6 major leagues.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Leagues included:
+
+Premier League
+
+La Liga
+
+Serie A
+
+Bundesliga
+
+Ligue 1
+
+Portugal League
+
+<h2>🔍 Search Functionality:</h2>
+
+Search for any of the 6 leagues.
+
+View the full standings table for the selected league.
+
+<h2>⚡ Optimized Fetching:</h2>
+Uses API-Football to retrieve  league data.
+
+<h2>🎨 Clean UI/UX:</h2>
+
+Minimal design, focused on clarity and stats.
+
+<h2>🛠️ Tech Stack</h2>
+
+Frontend: React + Vite
+Styling: SASS
+Routing: React-router-dom
+API: Self-made Dummy Data
+
+<h2>📂 Project Setup</h2>
+<h3>Clone this repo:</h3>
+[git clone https://github.com/your-username/football-stats-app.git
+cd football-stats-app
+npm install
+npm run dev]
+
+📜 License
+This project is for educational purposes only.
