@@ -54,5 +54,7 @@ cd football-stats-app
 npm install
 npm run dev]
 
+
 📜 License
+
 This project is for educational purposes only.
