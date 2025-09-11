@@ -40,8 +40,11 @@ Minimal design, focused on clarity and stats.
 <h2>🛠️ Tech Stack</h2>
 
 Frontend: React + Vite
+
 Styling: SASS
+
 Routing: React-router-dom
+
 API: Self-made Dummy Data
 
 <h2>📂 Project Setup</h2>
