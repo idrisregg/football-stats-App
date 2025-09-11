@@ -55,6 +55,5 @@ npm install
 npm run dev]
 
 
-📜 License
-
+<h2>📜 License</h2>
 This project is for educational purposes only.
