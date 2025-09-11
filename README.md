@@ -50,8 +50,11 @@ API: Self-made Dummy Data
 <h2>📂 Project Setup</h2>
 <h3>Clone this repo:</h3>
 [git clone https://github.com/your-username/football-stats-app.git
+
 cd football-stats-app
+
 npm install
+
 npm run dev]
 
 
