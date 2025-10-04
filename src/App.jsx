@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Search from "./components/search";
 import LeagueGrid from "./components/league-grid.jsx";
 import Upbtn from "./components/go-up-btn.jsx";
+import { useNavigate } from "react-router-dom";
 
  const leagues = [
   { name: "Premier League", img: "/Leagues-icons/epl.png", url: "https://raw.githubusercontent.com/idrisregg/Imitation-api/main/epl_real_standings.json" },
@@ -12,18 +13,40 @@ import Upbtn from "./components/go-up-btn.jsx";
   { name: "Portugal League", img: "/Leagues-icons/portugal_league.png", url: "https://raw.githubusercontent.com/idrisregg/Imitation-api/main/portugal_league_real_standings.json" },
 ];
 
-
-
 const App = () => {
 
   const [search,setSearch]=useState('');
+
+  const navigate = useNavigate();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+
+    const firstWord = search.trim().split(" ")[0].toLowerCase();
+
+    const routes = {
+      premier: "/epl",
+      serie: "/seriea",
+      bundesliga: "/bundesliga",
+      portugal: "/portugal",
+      ligue: "/ligue1",
+      laliga: "/laliga",
+    };
+
+    if (routes[firstWord]) {
+      navigate(routes[firstWord]);
+    } else {
+      alert("No match found!");
+    }
+  };
+
   
   return (
     <main>
       <header>
         <img alt="header-logo" src="/logo.png" />
       </header>
-        <Search search={search} setSearch={setSearch}  />
+        <Search search={search} setSearch={setSearch} handleSearch={handleSearch} />
       <div className="content">
         <span>Leagues</span>
       <div className="leagues">
